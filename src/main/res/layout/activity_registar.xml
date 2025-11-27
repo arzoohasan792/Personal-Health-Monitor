@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegisterActivity">
+
+    <!-- App Logo / Title -->
+    <TextView
+        android:id="@+id/textViewAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/agbalumo"
+        android:text="Fitify"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#ADA4EB"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Login Subtitle -->
+    <TextView
+        android:id="@+id/textViewLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alike"
+        android:text="Registration"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppTitle" />
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/editTextRegUsername"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoginTitle" />
+
+    <!-- Email Field -->
+    <EditText
+        android:id="@+id/editTextRegEmail"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegUsername" />
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/editTextRegPassword"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegEmail" />
+
+    <!-- Confirm Password Field -->
+    <EditText
+        android:id="@+id/editTextRegConfirmPassword"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegPassword" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="187dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_bg"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegConfirmPassword" />
+
+    <!-- Already Have Account Text -->
+    <TextView
+        android:id="@+id/textViewExistingUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Already have an account?"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
